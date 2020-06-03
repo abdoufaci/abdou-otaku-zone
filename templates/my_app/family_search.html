@@ -1,0 +1,940 @@
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>abdou family search</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css>
+    <link rel="stylesheet" href=https://fonts.googleapis.com/icon?family=Material+Icons>
+</head>
+<body>
+<nav style="background-color:black">
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Abdou Family</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h1 style="text-align: center"> who's the peroon are u looking for in abdou family !</h1>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:orange">flash_on</i>
+                <p>Fast craigslist web scraper</p>
+                <p class="light center">Scrape away right here with a beautiful GUI.</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: orange">camera</i>
+                <p>Filter your searches</p>
+                <p class="light center">We built in functionality to filter based on pricing.</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:orange">chrome_reader_mode</i>
+                <p>A much sexier front-end to Craigslist</p>
+                <p class="light center">We built this with ❤️</p>
+            </div>
+        </div>
+    </div>
+    <form action="{% url 'family_search' %}" method="post">
+        {% csrf_token %}
+          <nav style="background-color:orange">
+              <div class="nav-wrapper">
+                  <form>
+                      <div class="input-field">
+                          <input id="search" type="search" name="search">
+                          <label class="label-icon" for="search"><i class="material-icons"style="color:black">search</i></label>
+                          <i class="material-icons">close</i>
+                      </div>
+                  </form>
+              </div>
+          </nav>
+    </form>
+
+    <div class="row">
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/43/3a/c4/433ac422ee798a469740c677ce3ba641.jpg" style="height:10cm">
+                    <span class="card-title">Dragon Ball</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/ce/9c/93/ce9c938d04a67fec228835f4e91ee3a9.jpg" style="height:10cm">
+                    <span class="card-title">Bleach</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/b6/b8/cb/b6b8cb9efe9bb959af7c67aee01ca1bb.jpg" style="height:10cm">
+                    <span class="card-title">Death Note</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images.sgcafe.net/2018/12/Gintama_Episode_11.png" style="height:10cm">
+                    <span class="card-title">Gintama</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://pictures.betaseries.com/fonds/poster/e1c91ba7ebe708ec96e065a580b5a85c.jpg" style="height:10cm">
+                    <span class="card-title">Black Clover</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjU5NGY1NzYtNmIwYy00N2EzLTk1NzktOTM0ZjJjMjk0ZGYyXkEyXkFqcGdeQXVyMjQ5NjMxNDA@._V1_UY1200_CR105,0,630,1200_AL_.jpg" style="height:10cm">
+                    <span class="card-title">Detective Conan</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/d1/0f/fc/d10ffcc72efe94737faacc65746580f4.jpg" style="height:10cm">
+                    <span class="card-title">One Piece</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://image.animedigitalnetwork.fr/license/naruto/tv2/web/affiche_370x0.jpg" style="height:10cm">
+                    <span class="card-title">Naruto</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://vignette.wikia.nocookie.net/db-dokfanbattle/images/c/c8/Meliodafu.jpg/revision/latest?cb=20180720204652" style="height:10cm">
+                    <span class="card-title">Nanatsu No Taizai</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ourfavoriteanime.files.wordpress.com/2018/09/9c91ffa3-dc20-48bf-8bc5-692e37c76d88.jpeg" style="height:10cm">
+                    <span class="card-title">Attack On Titan</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/2e/Deku_2.0.png/revision/latest?cb=20180716202923" style="height:10cm">
+                    <span class="card-title">Boku No Hero Academia</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.nautiljon.com/images/anime/00/49/youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_6894.jpg" style="height:10cm">
+                    <span class="card-title">Classroom Of The Elite</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/1644569/Latvian/1644569_Latvian_NewShowDetailHeroPhone_8bcef5aa-d375-ea11-82a8-dd291e252010.jpg" style="height:10cm">
+                    <span class="card-title">Hyouka</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.nautiljon.com/images/anime/00/74/yahari_ore_no_seishun_love_comedy_wa_machigatteiru_zoku_oav_5447.jpg" style="height:10cm">
+                    <span class="card-title" style="color:black">Yahari</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/9c/8e/d6/9c8ed64a619df9c040c63b5bfb119648.jpg" style="height:10cm">
+                    <span class="card-title" style="color:black">Fairy Tail</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://imgsrc.cineserie.com/2019/03/1305927.jpg?ver=1" style="height:10cm">
+                    <span class="card-title">Dan Machi</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://wakamedia.wakanim.tv/library-400/216_636967478187954031Tokyo_Ghoul_RE_Small_hq.jpg" style="height:10cm">
+                    <span class="card-title">Tokyo Ghoul</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://miro.medium.com/max/600/1*g24O1zASQ82oMPnA7UoDHA.jpeg"style="height:10cm">
+                    <span class="card-title">Tower Of God</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81pugnvyuBL.jpg"style="height:10cm">
+                    <span class="card-title">The Promise Neverland</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://wir.skyrock.net/wir/v1/resize/?c=isi&im=%2F4753%2F101194753%2Fpics%2F3311868124_1_2_vyh2iZ4b.jpg&w=397"style="height:10cm">
+                    <span class="card-title" style="color:black">Kuroko No Basket</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://cdn.myanimelist.net/images/anime/7/76014.jpg"style="height:10cm">
+                    <span class="card-title">haikyuu</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://cdn-us.anidb.net/images/main/221618.jpg"style="height:10cm">
+                    <span class="card-title">Relife</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2UwOTMwMjMtZTE5MS00YmY4LTg4YjAtZDE3ZTg3YTU5MmQ2XkEyXkFqcGdeQXVyODEyMDIxNDY@._V1_.jpg"style="height:10cm">
+                    <span class="card-title">Vinland Saga</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://miro.medium.com/max/680/1*bXq6jUP7hjXddTOpL8nSnw.jpeg"style="height:10cm">
+                    <span class="card-title">Dororo</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static.tvtropes.org/pmwiki/pub/images/image_0250.jpeg"style="height:10cm">
+                    <span class="card-title">code geass</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+             <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://animehunch.com/wp-content/uploads/2020/02/steinsgte.jpg"style="height:10cm">
+                    <span class="card-title">Steins Gate</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://wheninmanila.blob.core.windows.net/wheninmanilabucket/2019/06/D7rQ8bGX4AYrtLJ.jpeg"style="height:10cm">
+                    <span class="card-title">Kimi No Na Wa</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.wallpaperup.com/uploads/wallpapers/2017/08/21/1097261/985e2b9cfb09e2809fc0ad161be1cb64-700.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Ishida Koe No Katachi</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://miro.medium.com/max/600/1*AP2Hu0Rjd27Ir6iLnjHv7A.jpeg"style="height:10cm">
+                    <span class="card-title">Kaguya Sama</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/7b/17/2a/7b172aa8bf04c1bcbd3ad919457a86f2.jpg"style="height:10cm">
+                    <span class="card-title"style="color:black">Shigatsu Wa Kimi No Uso</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/2c/55/1c/2c551cce4ec5fbe772ab7bbc33c257ee.jpg"style="height:10cm">
+                    <span class="card-title">JoJo</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://cdn-us.anidb.net/images/main/245073.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Violet Evergarden</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static.tvtropes.org/pmwiki/pub/images/ansatsu_keyvisual.jpg"style="height:10cm">
+                    <span class="card-title">Assassination Classroom</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg"style="height:10cm">
+                    <span class="card-title">Tenki No Ko</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZmE1NjIyNjYtMTVmMy00M2YyLTljMjMtZGQwYmUxOTU4NjRlXkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_UY1200_CR101,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title">Mob Psycho 100</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://pm1.narvii.com/5942/e6c1e6f14d89680246a2a31eebc66f0c73a0bf7c_hq.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Another</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjU2ZDZkYmMtYTA3Yi00NTZkLTgzYjgtOTRhMTFiOWFkODZmXkEyXkFqcGdeQXVyNjkyODc3NjQ@._V1_UY1200_CR85,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title">Akame GA Kill</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/09/e7/c9/09e7c9f1f0cb1994c16b27d4e4f4240a.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Mirai Nikki</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwAR4AJ-UoFbDIcjz9TzepSQ"style="height:10cm">
+                    <span class="card-title" style="color:black">No Game No Life</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images.justwatch.com/poster/155236128/s592"style="height:10cm">
+                    <span class="card-title" style="color:black">Shokugeki No Souma</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://miro.medium.com/max/990/1*gdCZzDmB2xGzgYzH5IWQGg.jpeg"style="height:10cm">
+                    <span class="card-title">Fate /Zero</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/ee/c9/be/eec9be4260224049b3a03c2453dcd9f6.jpg"style="height:10cm">
+                    <span class="card-title">Kuroshitsuji</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://vignette.wikia.nocookie.net/konosuba/images/9/9d/Konosuba_Volume_16.jpg/revision/latest/top-crop/width/360/height/450?cb=20190711220204"style="height:10cm">
+                    <span class="card-title">Kono Subarashii Sekai</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.nautiljon.com/images/anime/00/33/danshi_koukousei_no_nichijou_2133.jpg?1509699414"style="height:10cm">
+                    <span class="card-title">Danshi Koukousei</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BY2NmNTdmNDgtMjJmMS00YzQ1LTliN2ItMjQxOGRiMjAwODFhXkEyXkFqcGdeQXVyMjc4OTQ1OTA@._V1_UY1200_CR85,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title">Kyoukai No Kanata</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://mfiles.alphacoders.com/841/841733.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Carole and Tuesday</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://honeysanime.com/wp-content/uploads/2018/07/Wotaku-ni-Koi-wa-Muzukashii-Wallpaper.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Wotaku Ni Koi WA Muzukashii</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYThkMDJjZGYtNTg2NS00ZDEzLTkxNDctODgwMTNjNzEzODhkXkEyXkFqcGdeQXVyMTA3OTEyODI1._V1_UY1200_CR105,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Azumanga Daioh</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71vNPKTtxtL.jpg"style="height:10cm">
+                    <span class="card-title">Yuri ! On Ice</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOWVlNTkyMWMtYzE0Ny00NzYzLTlhZDQtZmQ0MGNhZWU4MGFmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title">Hell Girl</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://wakamedia.wakanim.tv/library-400/158_637014972681567494Charlotte_Small_hq.jpg"style="height:10cm">
+                    <span class="card-title">Charlotte</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://c.76.my/Malaysia/chuunibyou-demo-koi-ga-shitai-take-movie-20013-20108-discplayer-1810-22-F1317406_1.jpg"style="height:10cm">
+                    <span class="card-title">Chuunibyou Demo Koi Ga Shitai</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://3.bp.blogspot.com/-PeCkJl_w-qs/T_I31VVWFHI/AAAAAAAAAes/hXAsugFt6WU/s1600/rinyukio.jpg"style="height:10cm">
+                    <span class="card-title">Ao No Exorcist</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://otakuvoice.com/wp-content/uploads/2019/07/EnenNoShouboutaiPoster-480x681.jpg"style="height:10cm">
+                    <span class="card-title">Enen No Shouboutai</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://lh3.googleusercontent.com/proxy/7bzPcSbEvphz5XmUAZGYwl4TCRkIlL3NY3k-5VYt8sq1lYu97YfkPfsnLCyPE4EoFdT2SGkwQah4mk93C9n_39GGDWuXyA"style="height:10cm">
+                    <span class="card-title">Free</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmNlMTYzNDMtZjI5NS00NTdjLTlkYWMtMWMzZWJjODY2YzAzXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY1200_CR106,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title">Psycho Pass</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/4c/46/44/4c4644fccebed32417929830763bdcb5.jpg"style="height:10cm">
+                    <span class="card-title">Noragami</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/71/34/72/713472b12c394e45bd549a4cf1c8aa83.jpg"style="height:10cm">
+                    <span class="card-title">Overlord</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOTZhZTVmMWQtYTgyNS00MGNkLTkwMDItZWJiMzczMjgwZjQ3L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg"style="height:10cm">
+                    <span class="card-title">Re Zero Starting Life In Another</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://d8s4gwazj91zf.cloudfront.net/img/goods/L/TASB00886_d4681dfafdd848fba038cba79d507465.jpg"style="height:10cm">
+                    <span class="card-title">Fairy Gone</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://miro.medium.com/max/680/0*VI094t3EybwXHuQm.jpeg"style="height:10cm">
+                    <span class="card-title" style="color:blue">Ahiru No Sora</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg"style="height:10cm">
+                    <span class="card-title">Kimetsu No Yaiba</span>
+                </div>
+                <div class="card-content">
+                    <p>I am a very simple card.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">View listing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+
