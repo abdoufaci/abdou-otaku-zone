@@ -353,16 +353,15 @@ for (var attr in meta) {
 </head>
 <body>
 <nav style="background-color:orange">
-    <div class="container nav-wrapper">
-    <div class="nav-wrapper">
+<div class="container">
         <a href="/" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
         <ul id="nav-mobile" class="ag hide-on-med-and-down">
-          <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">categories<i class="material-icons ag" style="color:black">arrow_drop_down</i></a></li>
+          <li class="active"><a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">categories<i class="material-icons ag" style="color:black">arrow_drop_down</i></a></li>
         </ul>
 
         <ul id="pages" class="dropdown-content" style="color:orange">
-          <li><a class="g" href="shojo_search" style="margin-left:0.1cm ; color:orange ; font-family:cursive">shojo</a></li>
-          <li><a href="startup-zoom-out.html" style="margin-left:0.1cm ; color:orange">Zoom Out</a></li>
+          <li><a  href="shojo_search" style="margin-left:0.1cm ; color:orange ; font-family:cursive">shojo</a></li>
+          <li><a href="startup-zoom-out.html" style="margin-left:0.1cm ; color:orange">Zoom </a></li>
           <li><a href="startup-circle-reveal.html" style="margin-left:0.1cm ; color:orange">Circle Reveal</a></li>
           <li><a href="startup-phone-wall.html" style="margin-left:0.1cm ; color:orange">Phone Wall</a></li>
           <li><a href="startup-element-transitions.html" style="margin-left:0.1cm ; color:orange">Element Transitions</a></li>
@@ -370,10 +369,21 @@ for (var attr in meta) {
           <li><a href="startup-shuffle.html" style="margin-left:0.1cm ; color:orange">Shuffle</a></li>
           <li><a href="startup-postcard.html" style="margin-left:0.1cm ; color:orange">Postcards</a></li>
         </ul>
-
         <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
-      </div>
-    </div>
+
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="bt hide-on-med-and-down">
+          <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons bt">arrow_drop_down</i></a></li>
+        </ul>
+
+        <ul id='feature-dropdown' class='dropdown-content'>
+          <li><a href="/pages/full-header">Fullscreen Header</a></li>
+          <li><a href="/pages/horizontal">Horizontal Style</a></li>
+          <li><a href="/pages/no-image">No Image Expand</a></li>
+        </ul>
+
+</div>
 </nav>
 <div class="container">
     <h1 style="text-align: center ; font-family:cursive"> any anime you are looking for... you will find it!</h1>
@@ -1967,6 +1977,7 @@ for (var attr in meta) {
 {% endif %}
 {% endblock content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="base.javaScript.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-all-min.js?v=3413361328181621882" crossorigin="anonymous"></script>
