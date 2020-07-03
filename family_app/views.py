@@ -24,3 +24,21 @@ def shojo_search(request):
 
 
     return render(request, 'my_app/shojo_search.html',)
+
+
+def page2(request):
+
+
+    return render(request, 'my_app/page2.html',)
+
+
+def page3(request):
+
+
+    return render(request, 'my_app/page3.html',)
+
+
+def page4(request):
+
+
+    return render(request, 'my_app/page4.html',)
