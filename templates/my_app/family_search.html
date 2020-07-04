@@ -356,33 +356,45 @@ for (var attr in meta) {
 <div class="container">
         <a href="/" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
         <ul id="nav-mobile" class="ag hide-on-med-and-down">
-          <li class="active"><a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">categories<i class="material-icons ag" style="color:black">arrow_drop_down</i></a></li>
+            <li class="active">
+                <a class="dropdown-button" data-activates="feature-dropdown" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                    colors
+                    <i class="material-icons ag" style="color:black">
+                        arrow_drop_down
+                    </i>
+                </a>
+            </li>
         </ul>
 
-        <ul id="pages" class="dropdown-content" style="color:orange">
-          <li><a  href="shojo_search" style="margin-left:0.1cm ; color:orange ; font-family:cursive">shojo</a></li>
-          <li><a href="startup-zoom-out.html" style="margin-left:0.1cm ; color:orange">Zoom </a></li>
-          <li><a href="startup-circle-reveal.html" style="margin-left:0.1cm ; color:orange">Circle Reveal</a></li>
-          <li><a href="startup-phone-wall.html" style="margin-left:0.1cm ; color:orange">Phone Wall</a></li>
-          <li><a href="startup-element-transitions.html" style="margin-left:0.1cm ; color:orange">Element Transitions</a></li>
-          <li><a href="startup-basic-elements.html" style="margin-left:0.1cm ; color:orange">Basic Elements</a></li>
-          <li><a href="startup-shuffle.html" style="margin-left:0.1cm ; color:orange">Shuffle</a></li>
-          <li><a href="startup-postcard.html" style="margin-left:0.1cm ; color:orange">Postcards</a></li>
+        <ul id="feature-dropdown"class="dropdown-content" style="color:orange">
+          <li><a  href="shojo_search" style="color:orange ; font-family:cursive ; padding-left:0.2cm">orange</a></li>
+          <li><a href="startup-zoom-out.html" style="color:blue ; font-family:cursive ; padding-left:0.2cm">blue</a></li>
+          <li><a href="startup-circle-reveal.html" style="color:darkred ; font-family:cursive ; padding-left:0.2cm">red</a></li>
+          <li><a href="startup-phone-wall.html" style="color:yellow ; font-family:cursive ; padding-left:0.2cm">yellow</a></li>
+          <li><a href="startup-element-transitions.html" style="color:purple ; font-family:cursive ; padding-left:0.2cm">purple</a></li>
+          <li><a href="startup-basic-elements.html" style="color:darkgreen ; font-family:cursive ; padding-left:0.2cm">green</a></li>
+          <li><a href="startup-shuffle.html" style="color:black ; font-family:cursive ; padding-left:0.2cm">white</a></li>
+          <li><a href="startup-postcard.html" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">Pink</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
 
 
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="bt hide-on-med-and-down">
-          <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons bt">arrow_drop_down</i></a></li>
+        <ul id="nav-mobile" class="ag hide-on-med-and-down">
+            <li class="active">
+                <a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                    categories
+                    <i class="material-icons ag" style="color:black">
+                        arrow_drop_down
+                    </i>
+                </a>
+            </li>
         </ul>
 
-        <ul id='feature-dropdown' class='dropdown-content'>
-          <li><a href="/pages/full-header">Fullscreen Header</a></li>
-          <li><a href="/pages/horizontal">Horizontal Style</a></li>
-          <li><a href="/pages/no-image">No Image Expand</a></li>
+        <ul id="pages" class="dropdown-content" style="color:orange ; width:3.5cm">
+          <li><a  href="shojo_search" style="color:orange ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
+          <li><a href="startup-zoom-out.html" style="color:orange ; font-family:cursive ; padding-left:0.2cm">anime film</a></li>
         </ul>
-
+    <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
 </div>
 </nav>
 <div class="container">
@@ -491,7 +503,7 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://pictures.betaseries.com/fonds/poster/e1c91ba7ebe708ec96e065a580b5a85c.jpg" style="height:10cm">
+                    <img src="https://media.comicbook.com/2017/11/black-clover-default-1048001.jpg" style="height:10cm">
                     <span class="card-title">Black Clover</span>
                 </div>
                 <div class="card-content">
@@ -1357,7 +1369,8 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
-                <div class="col s4">
+{% elif search == 'akagami no shirayukihime' or search == 'Akagami no shirayukihime' or search == 'akagami no shirayukihime' or search == 'Akagami no shirayukihime' %}
+        <div class="col s4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://www.itl.cat/pngfile/big/170-1704404_1-comment-akagami-no-shirayukihime.jpg"style="height:10cm">
@@ -1371,6 +1384,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Akanesasu shoujo' or search == 'akanesasu shoujo' or search == 'akanesasushoujo' or search == 'Akanesasushoujo' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1385,6 +1399,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Akatsuki no yona' or search == 'Akatsuki no yona' or search == 'Akatsuki no yona' or search == 'Akatsuki no yona' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1399,6 +1414,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Angel beats' or search == 'angel beats' or search == 'Angelbeats' or search == 'angelbeats' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1413,6 +1429,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Azumanga' or search == 'azumanga' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1427,6 +1444,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'blends' or search == 'Blends' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1441,6 +1459,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Dagashi kashi' or search == 'dagashi kashi' or search == 'dagashikashi' or search == 'Dagashikashi' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1455,6 +1474,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Darling in the franxx' or search == 'darling in the franxx' or search == 'Darlinginthefranxx' or search == 'darlinginthefranxx' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1469,6 +1489,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Go Toubun no hanayome' or search == 'go Toubun no hanayome' or search == 'goToubunnohanayome' or search == 'GoToubunnohanayome' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1483,6 +1504,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Éden zero' or search == 'édenzero' or search == 'Édenzero' or search == 'édenzero' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1497,6 +1519,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Hajime no ippo' or search == 'hajime no ippo' or search == 'Hajimenoippo' or search == 'hajimenoippo' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1511,6 +1534,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Shiki' or search == 'shiki' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1525,6 +1549,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Dead man wonderland' or search == 'dead man wonderland' or search == 'Deadmanwonderland' or search == 'deadmanwonderland' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1539,6 +1564,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'higurashi no naku koro ni' or search == 'Higurashi no naku koro ni' or search == 'Higurashinonakukoroni' or search == 'higurashinonakukoroni' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1553,6 +1579,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Corpse party' or search == 'corpse party' or search == 'corpseparty' or search == 'Corpseparty' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1567,6 +1594,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'umaru chan' or search == 'Umaru chan' or search == 'umaruchan' or search == 'Umaruchan' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1581,6 +1609,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Blood' or search == 'blood' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1595,6 +1624,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'isekai quartet' or search == 'Isekai quartet' or search == 'isekaiquartet' or search == 'Isekaiquartet' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1609,6 +1639,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Itsudatte 10cm' or search == 'itsudatte 10cm' or search == 'itsudatte10cm' or search == 'Itsudatte10cm' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1623,6 +1654,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'jitsu wa watashi' or search == 'Jitsu wa watashi' or search == 'Jitsuwawatashi' or search == 'jitsuwawatashi' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1637,6 +1669,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'just because' or search == 'Just because' or search == 'Justbecause' or search == 'justbecause' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1651,6 +1684,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'karakai jou' or search == 'Karakai jou' or search == 'karakaijou' or search == 'Karakaijou' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1665,6 +1699,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'kimi ni todoke' or search == 'Kiminitodoke' or search == 'kiminitodoke' or search == 'Kimi ni todoke' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1679,6 +1714,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Kingdom' or search == 'kingdom' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1693,6 +1729,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'koi wa ame' or search == 'Koi wa ame' or search == 'Koiwaame' or search == 'koiwaame' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1707,6 +1744,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Love live' or search == 'love live' or search == 'Lovelive' or search == 'Love live' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1721,6 +1759,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'lucky star' or search == 'Lucky star' or search == 'Luckystar' or search == 'luckystar' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1735,6 +1774,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Magi' or search == 'magi' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1749,6 +1789,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'magic kaito' or search == 'Magic kaito' or search == 'Magickaito' or search == 'magickaito' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1763,6 +1804,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'mujin wakusei' or search == 'Mujin wakusei' or search == 'mujinwakusei' or search == 'Mujinwakusei' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1777,6 +1819,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Nichijou' or search == 'nichijou' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1791,6 +1834,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Plastic memories' or search == 'plastic memories' or search == 'plasticmemories' or search == 'Plasticmemories' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1805,6 +1849,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'revisions' or search == 'Revisions'%}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1818,6 +1863,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Saiki kusuo' or search == 'saikikusuo' or search == 'saiki kusuo' or search == 'Saikikusuo' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1832,6 +1878,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Sakamoto desu ga' or search == 'sakamoto desu ga' or search == 'sakamotodesuga' or search == 'Sakamotodesuga' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1846,6 +1893,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Sakurasou' or search == 'sakurasou'%}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1860,6 +1908,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Angels of death' or search == 'angels of death' or search == 'Angelsofdeath' or search == 'angelsofdeath' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1874,6 +1923,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Golden time' or search == 'golden time' or search == 'goldentime' or search == 'Goldentime' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1888,6 +1938,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Grand blue' or search == 'grand blue' or search == 'Grandblue' or search == 'grandblue' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1902,6 +1953,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'yamada kun and the seven witches' or search == 'Yamada kun and the seven witches' or search == 'yamadakunandthesevenwitches' or search == 'Yamada kun and the seven witches' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1916,6 +1968,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'Bakuman' or search == 'bakuman' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1930,7 +1983,8 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
-        <div class="col s4">
+{% elif search == 'anohana' or search == 'Anohana' %}
+     <div class="col s4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://m.media-amazon.com/images/M/MV5BYmQ5Y2RiOTAtMzg2Ni00MzE0LWE0NTItNzExNmMzOGQyY2NjL2ltYWdlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg"style="height:10cm">
@@ -1944,7 +1998,8 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
-        <div class="col s4">
+{% elif search == 'Kenka bancho otome: girl beats boys' or search == 'kenka bancho otome: girl beats boys' or search == 'Kenkabanchootome:girlbeatsboys' or search == 'kenkabanchootome:girlbeatsboys' %}
+     <div class="col s4">
             <div class="card">
                 <div class="card-image">
                     <img src="https://i.pinimg.com/originals/6a/37/c0/6a37c0e35bf805dd5afb96fb88e64971.jpg"style="height:10cm">
@@ -1958,6 +2013,7 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
+{% elif search == 'tonari no kaibutsu-kun' or search == 'Tonari no kaibutsu-kun' or search == 'tonarinokaibutsu-kun' or search == 'Tonarinokaibutsu-kun' %}
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
@@ -1981,5 +2037,6 @@ for (var attr in meta) {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-all-min.js?v=3413361328181621882" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48624446-1"></script>
 </body>
 </html>
