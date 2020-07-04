@@ -355,27 +355,49 @@ for (var attr in meta) {
 </head>
 <body>
 <nav style="background-color:orange">
-    <div class="container nav-wrapper">
-    <div class="nav-wrapper">
+<div class="container">
         <a href="/" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
         <ul id="nav-mobile" class="ag hide-on-med-and-down">
-          <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">categories<i class="material-icons ag" style="color:black">arrow_drop_down</i></a></li>
+            <li class="active">
+                <a class="dropdown-button" data-activates="feature-dropdown" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                    colors
+                    <i class="material-icons ag" style="color:black">
+                        arrow_drop_down
+                    </i>
+                </a>
+            </li>
         </ul>
 
-        <ul id="pages" class="dropdown-content" style="color:orange">
-          <li><a class="g" href="shojo_search" style="margin-left:0.1cm ; color:orange ; font-family:cursive">shojo</a></li>
-          <li><a href="startup-zoom-out.html" style="margin-left:0.1cm ; color:orange">Zoom Out</a></li>
-          <li><a href="startup-circle-reveal.html" style="margin-left:0.1cm ; color:orange">Circle Reveal</a></li>
-          <li><a href="startup-phone-wall.html" style="margin-left:0.1cm ; color:orange">Phone Wall</a></li>
-          <li><a href="startup-element-transitions.html" style="margin-left:0.1cm ; color:orange">Element Transitions</a></li>
-          <li><a href="startup-basic-elements.html" style="margin-left:0.1cm ; color:orange">Basic Elements</a></li>
-          <li><a href="startup-shuffle.html" style="margin-left:0.1cm ; color:orange">Shuffle</a></li>
-          <li><a href="startup-postcard.html" style="margin-left:0.1cm ; color:orange">Postcards</a></li>
+        <ul id="feature-dropdown"class="dropdown-content" style="color:orange">
+          <li><a  href="shojo_search" style="color:orange ; font-family:cursive ; padding-left:0.2cm">orange</a></li>
+          <li><a href="startup-zoom-out.html" style="color:blue ; font-family:cursive ; padding-left:0.2cm">blue</a></li>
+          <li><a href="startup-circle-reveal.html" style="color:darkred ; font-family:cursive ; padding-left:0.2cm">red</a></li>
+          <li><a href="startup-phone-wall.html" style="color:yellow ; font-family:cursive ; padding-left:0.2cm">yellow</a></li>
+          <li><a href="startup-element-transitions.html" style="color:purple ; font-family:cursive ; padding-left:0.2cm">purple</a></li>
+          <li><a href="startup-basic-elements.html" style="color:darkgreen ; font-family:cursive ; padding-left:0.2cm">green</a></li>
+          <li><a href="startup-shuffle.html" style="color:black ; font-family:cursive ; padding-left:0.2cm">white</a></li>
+          <li><a href="startup-postcard.html" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">Pink</a></li>
         </ul>
-
         <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
-      </div>
-    </div>
+
+
+        <ul id="nav-mobile" class="ag hide-on-med-and-down">
+            <li class="active">
+                <a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                    categories
+                    <i class="material-icons ag" style="color:black">
+                        arrow_drop_down
+                    </i>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="pages" class="dropdown-content" style="color:orange ; width:3.5cm">
+          <li><a  href="shojo_search" style="color:orange ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
+          <li><a href="startup-zoom-out.html" style="color:orange ; font-family:cursive ; padding-left:0.2cm">anime film</a></li>
+        </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
+</div>
 </nav>
 <div class="container">
     <h1 style="text-align: center ; font-family:cursive"> any anime you are looking for... you will find it!</h1>
@@ -603,6 +625,7 @@ for (var attr in meta) {
             <div class="card">
                 <div class="card-image">
                     <img src="https://i.pinimg.com/474x/4a/6d/2b/4a6d2be4daac9c55c85489f4d07fec09.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Revisions</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
