@@ -1,2 +1,11 @@
-.waves-effect.waves-orange .waves-ripple {    background-color: orange;
+.waves-effect.waves-orange {    background-color:darkorange;
+  }
+
+.waves-effect.waves-red {    background-color:darkred;
+  }
+
+.waves-effect.waves-green {    background-color:darkgreen;
+  }
+
+.waves-effect.waves-blue {    background-color:darkblue;
   }
