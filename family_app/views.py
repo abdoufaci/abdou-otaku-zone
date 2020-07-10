@@ -116,3 +116,30 @@ def blue_page3(request):
 
 def blue_page4(request):
     return render(request, 'blue/blue_page4.html',)
+
+
+def pink(request):
+    return render(request, 'pink/base5.html',)
+
+
+def pink_search(request):
+    request.method
+    search = request.POST.get('search')
+    models.Search.objects.create(search=search)
+    stuff_for_frontend = {
+        'search': search,
+    }
+
+    return render(request, 'pink/search5.html', stuff_for_frontend)
+
+
+def pink_page2(request):
+    return render(request, 'pink/pink_page2.html',)
+
+
+def pink_page3(request):
+    return render(request, 'pink/pink_page3.html',)
+
+
+def pink_page4(request):
+    return render(request, 'pink/pink_page4.html',)

@@ -354,9 +354,9 @@ for (var attr in meta) {
   <link rel="canonical" href="https://themes.materializecss.com/pages/startup-horizontal-half.html">
 </head>
 <body>
-<nav style="background-color:darkorange">
+<nav style="background-color:darkred">
 <div class="container">
-        <a href="/" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
+        <a href="red" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
         <ul id="nav-mobile" class="ag hide-on-med-and-down">
             <li class="active">
                 <a class="dropdown-button" data-activates="feature-dropdown" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
@@ -370,13 +370,13 @@ for (var attr in meta) {
 
         <ul id="feature-dropdown"class="dropdown-content" style="color:orange">
           <li><a  href="/" style="color:orange ; font-family:cursive ; padding-left:0.2cm">orange</a></li>
-          <li><a href="blue" style="color:blue ; font-family:cursive ; padding-left:0.2cm">blue</a></li>
+          <li><a href="startup-zoom-out.html" style="color:blue ; font-family:cursive ; padding-left:0.2cm">blue</a></li>
           <li><a href="red" style="color:darkred ; font-family:cursive ; padding-left:0.2cm">red</a></li>
           <li><a href="startup-phone-wall.html" style="color:yellow ; font-family:cursive ; padding-left:0.2cm">yellow</a></li>
           <li><a href="startup-element-transitions.html" style="color:purple ; font-family:cursive ; padding-left:0.2cm">purple</a></li>
           <li><a href="green" style="color:darkgreen ; font-family:cursive ; padding-left:0.2cm">green</a></li>
           <li><a href="startup-shuffle.html" style="color:black ; font-family:cursive ; padding-left:0.2cm">white</a></li>
-          <li><a href="pink" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">Pink</a></li>
+          <li><a href="startup-postcard.html" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">Pink</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
 
@@ -393,8 +393,8 @@ for (var attr in meta) {
         </ul>
 
         <ul id="pages" class="dropdown-content" style="color:orange ; width:3.5cm">
-          <li><a  href="shojo_search" style="color:darkorange ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
-          <li><a href="startup-zoom-out.html" style="color:darkorange ; font-family:cursive ; padding-left:0.2cm">anime film</a></li>
+          <li><a  href="shojo_search" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
+          <li><a href="startup-zoom-out.html" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">anime film</a></li>
         </ul>
     <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
 </div>
@@ -404,30 +404,29 @@ for (var attr in meta) {
     <div class="row">
         <div class="col s4">
             <div class="center">
-                <i class="large material-icons" style="color:darkorange">flash_on</i>
+                <i class="large material-icons" style="color:orange">flash_on</i>
                 <p style="font-family:cursive">Fast craigslist web scraper</p>
                 <p class="light center" style="font-family:cursive">Scrape away right here with a beautiful GUI.</p>
             </div>
         </div>
-
         <div class="col s4">
             <div class="center">
-                <i class="large material-icons" style="color:darkorange">camera</i>
+                <i class="large material-icons" style="color: orange">camera</i>
                 <p style="font-family:cursive">Filter your searches</p>
                 <p class="light center" style="font-family:cursive">We built in functionality to filter based on pricing.</p>
             </div>
         </div>
         <div class="col s4">
             <div class="center">
-                <i class="large material-icons" style="color:darkorange">chrome_reader_mode</i>
+                <i class="large material-icons" style="color:orange">chrome_reader_mode</i>
                 <p style="font-family:cursive">A much sexier front-end to Craigslist</p>
                 <p class="light center" style="font-family:cursive">We built this with ❤️</p>
             </div>
         </div>
     </div>
-    <form action="{% url 'family_search' %}" method="post">
+    <form action="{% url 'pink_search' %}" method="post">
         {% csrf_token %}
-          <nav style="background-color:darkorange">
+          <nav style="background-color:darkred">
               <div class="nav-wrapper">
                   <form>
                       <div class="input-field">
@@ -443,22 +442,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://i.pinimg.com/originals/43/3a/c4/433ac422ee798a469740c677ce3ba641.jpg" style="height:10cm">
-                    <span class="card-title">Dragon Ball</span>
-                </div>
-                <div class="card-content">
-                    <p style="color:black">I am a very simple card.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">View listing</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://i.pinimg.com/originals/ce/9c/93/ce9c938d04a67fec228835f4e91ee3a9.jpg" style="height:10cm">
-                    <span class="card-title">Bleach</span>
+                    <img src="https://cdn.myanimelist.net/images/anime/8/74042l.jpg"style="height:10cm">
+                    <span class="card-title">Jitsu WA watashi</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -471,8 +456,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://i.pinimg.com/originals/b6/b8/cb/b6b8cb9efe9bb959af7c67aee01ca1bb.jpg" style="height:10cm">
-                    <span class="card-title">Death Note</span>
+                    <img src="https://vignette.wikia.nocookie.net/just-because/images/9/9e/JustBecauseAnime.jpg/revision/latest/scale-to-width-down/340?cb=20170910212608"style="height:10cm">
+                    <span class="card-title">Just because</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -485,8 +470,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://images.sgcafe.net/2018/12/Gintama_Episode_11.png" style="height:10cm">
-                    <span class="card-title">Gintama</span>
+                    <img src="https://pics.filmaffinity.com/Skilled_Teaser_Takagi_san_TV_Series-354339679-large.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Karakai jou</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -499,8 +484,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://media.comicbook.com/2017/11/black-clover-default-1048001.jpg" style="height:10cm">
-                    <span class="card-title">Black Clover</span>
+                    <img src="https://i1.wp.com/static.zerochan.net/Kimi.ni.Todoke.full.416039.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Kimi ni todoke</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -513,8 +498,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://m.media-amazon.com/images/M/MV5BNjU5NGY1NzYtNmIwYy00N2EzLTk1NzktOTM0ZjJjMjk0ZGYyXkEyXkFqcGdeQXVyMjQ5NjMxNDA@._V1_UY1200_CR105,0,630,1200_AL_.jpg" style="height:10cm">
-                    <span class="card-title">Detective Conan</span>
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWM0NjQxYmEtMDQ4MS00MWI3LTk2NzEtODk2ODE0OGZhOWNiXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_UY1200_CR104,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title">Kingdom</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -527,8 +512,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://i.pinimg.com/originals/d1/0f/fc/d10ffcc72efe94737faacc65746580f4.jpg" style="height:10cm">
-                    <span class="card-title">One Piece</span>
+                    <img src="https://m.media-amazon.com/images/M/MV5BZTFmNDE5ZGYtOTQ1Yi00NTc3LWFhOTAtN2M1YzViNzJkOTIzXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_UY1200_CR110,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Koi WA ame</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -541,8 +526,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://image.animedigitalnetwork.fr/license/naruto/tv2/web/affiche_370x0.jpg" style="height:10cm">
-                    <span class="card-title">Naruto</span>
+                    <img src="https://i.pinimg.com/originals/74/c2/b7/74c2b70c78ac18413396278ca09676bb.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Love live</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -555,8 +540,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://vignette.wikia.nocookie.net/db-dokfanbattle/images/c/c8/Meliodafu.jpg/revision/latest?cb=20180720204652" style="height:10cm">
-                    <span class="card-title">Nanatsu No Taizai</span>
+                    <img src="https://m.media-amazon.com/images/M/MV5BYzIwZDkzYWQtZDBjYy00NTc2LWExNjYtNWEzZjdhNmM2NjUzXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Lucky star</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -569,8 +554,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://ourfavoriteanime.files.wordpress.com/2018/09/9c91ffa3-dc20-48bf-8bc5-692e37c76d88.jpeg" style="height:10cm">
-                    <span class="card-title">Attack On Titan</span>
+                    <img src="https://i.pinimg.com/originals/18/23/14/18231418634eadd3402c23e4f96ab617.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Magi</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -583,8 +568,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/2e/Deku_2.0.png/revision/latest?cb=20180716202923" style="height:10cm">
-                    <span class="card-title">Boku No Hero Academia</span>
+                    <img src="https://i.pinimg.com/originals/ac/15/7b/ac157bf0cd1cda5dfd7e7f88206a26ca.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Magic Kaito</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -597,8 +582,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://freakuotes.com/assets/img/categories/3626-youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-05de482a84bee09d3d50d1974ed9e36737b4e878.jpeg" style="height:10cm">
-                    <span class="card-title">Classroom Of The Elite</span>
+                    <img src="https://i.pinimg.com/originals/60/65/6c/60656cad79b1fd47d8f5c3ae3cf2ecb2.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Mujin wakusei</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -611,8 +596,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/1644569/Latvian/1644569_Latvian_NewShowDetailHeroPhone_8bcef5aa-d375-ea11-82a8-dd291e252010.jpg" style="height:10cm">
-                    <span class="card-title">Hyouka</span>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMmY1M2YzYzctZGJjZC00YTJkLTljMGQtMGJhOTczMjk1ODFmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Nichijou</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -625,8 +610,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://www.nautiljon.com/images/anime/00/74/yahari_ore_no_seishun_love_comedy_wa_machigatteiru_zoku_oav_5447.jpg" style="height:10cm">
-                    <span class="card-title" style="color:black">Yahari</span>
+                    <img src="https://ww1.animeiat.co/wp-content/uploads/2019/07/68297l.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Plastic memories</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -639,8 +624,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://i.pinimg.com/736x/9c/8e/d6/9c8ed64a619df9c040c63b5bfb119648.jpg" style="height:10cm">
-                    <span class="card-title" style="color:black">Fairy Tail</span>
+                    <img src="https://i.pinimg.com/474x/4a/6d/2b/4a6d2be4daac9c55c85489f4d07fec09.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Revisions</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -653,8 +638,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://imgsrc.cineserie.com/2019/03/1305927.jpg?ver=1" style="height:10cm">
-                    <span class="card-title">Dan Machi</span>
+                    <img src="https://i.pinimg.com/474x/4c/f4/41/4cf4411c32711bfb333e88388e5bcd66.jpg"style="height:10cm">
+                    <span class="card-title">Saiki kusuo</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -667,8 +652,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://wakamedia.wakanim.tv/library-400/216_636967478187954031Tokyo_Ghoul_RE_Small_hq.jpg" style="height:10cm">
-                    <span class="card-title">Tokyo Ghoul</span>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/813Sy4L+20L.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Sakamoto desu ga</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -681,8 +666,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://miro.medium.com/max/600/1*g24O1zASQ82oMPnA7UoDHA.jpeg"style="height:10cm">
-                    <span class="card-title">Tower Of God</span>
+                    <img src="https://pics.filmaffinity.com/The_Pet_Girl_of_Sakurasou_TV_Series-787351441-large.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Sakurasou</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -695,8 +680,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81pugnvyuBL.jpg"style="height:10cm">
-                    <span class="card-title">The Promise Neverland</span>
+                    <img src="https://www.sekinamayu.com/wp-content/uploads/2018/08/Satsuriku-no-Tenshi-blog-post.png"style="height:10cm">
+                    <span class="card-title">Angels of death</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -709,8 +694,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://wir.skyrock.net/wir/v1/resize/?c=isi&im=%2F4753%2F101194753%2Fpics%2F3311868124_1_2_vyh2iZ4b.jpg&w=397"style="height:10cm">
-                    <span class="card-title" style="color:black">Kuroko No Basket</span>
+                    <img src="https://i.pinimg.com/originals/64/67/ec/6467ec915b3cb57d299df260067b7524.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Golden Time</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -723,8 +708,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://i.pinimg.com/originals/4c/00/fb/4c00fb05d13762e28a70cc0ddce92c6b.jpg"style="height:10cm">
-                    <span class="card-title">haikyuu</span>
+                    <img src="https://m.media-amazon.com/images/I/91ivVbk4INL.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">Grand Blue</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -737,8 +722,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://m.media-amazon.com/images/M/MV5BZjk3ZmM0NmMtYzY1MC00Y2MyLTkxZjYtNjA2MDlhNTRhNWE4XkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg"style="height:10cm">
-                    <span class="card-title" style="color:black">Relife</span>
+                    <img src="https://cdn.myanimelist.net/images/anime/2/73700l.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">yamada kun and the seven witches</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -751,8 +736,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://m.media-amazon.com/images/M/MV5BN2UwOTMwMjMtZTE5MS00YmY4LTg4YjAtZDE3ZTg3YTU5MmQ2XkEyXkFqcGdeQXVyODEyMDIxNDY@._V1_.jpg"style="height:10cm">
-                    <span class="card-title">Vinland Saga</span>
+                    <img src="https://www.anime-planet.com/images/anime/covers/bakuman-2-3999.jpg?t=1534129159"style="height:10cm">
+                    <span class="card-title" style="color:black">Bakuman</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -765,8 +750,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://miro.medium.com/max/680/1*bXq6jUP7hjXddTOpL8nSnw.jpeg"style="height:10cm">
-                    <span class="card-title">Dororo</span>
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmQ5Y2RiOTAtMzg2Ni00MzE0LWE0NTItNzExNmMzOGQyY2NjL2ltYWdlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_UY1200_CR85,0,630,1200_AL_.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black">anohana</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -779,8 +764,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://static.tvtropes.org/pmwiki/pub/images/image_0250.jpeg"style="height:10cm">
-                    <span class="card-title">Code Geass</span>
+                    <img src="https://i.pinimg.com/originals/6a/37/c0/6a37c0e35bf805dd5afb96fb88e64971.jpg"style="height:10cm">
+                    <span class="card-title">Kenka Bancho Otome: Girl Beats Boys</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -793,8 +778,8 @@ for (var attr in meta) {
         <div class="col s4">
             <div class="card">
                 <div class="card-image">
-                    <img src="https://animehunch.com/wp-content/uploads/2020/02/steinsgte.jpg"style="height:10cm">
-                    <span class="card-title">Steins Gate</span>
+                    <img src="https://komyulife.com/media/anime/poster/262107.jpg"style="height:10cm">
+                    <span class="card-title">tonari no kaibutsu-kun</span>
                 </div>
                 <div class="card-content">
                     <p>I am a very simple card.</p>
@@ -804,29 +789,14 @@ for (var attr in meta) {
                 </div>
             </div>
         </div>
-        <div class="col s4">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://wheninmanila.blob.core.windows.net/wheninmanilabucket/2019/06/D7rQ8bGX4AYrtLJ.jpeg"style="height:10cm">
-                    <span class="card-title">Kimi No Na Wa</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">View listing</a>
-                </div>
-            </div>
-        </div>
-
     </div>
     <ul class="pagination" style="text-align:center">
-        <li class="disabled"><a href="#!"><i class="material-icons" style="color:orange">chevron_left</i></a></li>
-        <li class="active" style="background-color:darkorange"><a href="/" style="color:white">1</a></li>
-        <li class=" waves-effect waves-orange" style="background-color:black"><a href="page2" style="color:white">2</a></li>
-        <li class=" waves-effect waves-orange" style="background-color:black"><a href="page3" style="color:white">3</a></li>
-        <li class=" waves-effect waves-orange" style="background-color:black"><a href="page4" style="color:white">4</a></li>
-        <li class="waves-effect"><a href="#!"><i class="material-icons" style="color:orange">chevron_right</i></a></li>
+        <li class="disabled"><a href="#!"><i class="material-icons" style="color:hotpink">chevron_left</i></a></li>
+        <li class=" waves-effect waves-pink" style="background-color:black"><a href="pink" style="color:white">1</a></li>
+        <li class=" waves-effect waves-pink" style="background-color:black"><a href="pink_page2" style="color:white">2</a></li>
+        <li class=" waves-effect waves-pink" style="background-color:black"><a href="pink_page3" style="color:white">3</a></li>
+        <li class="active" style="background-color:hotpink"><a href="pink_page4" style="color:white">4</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons" style="color:hotpink">chevron_right</i></a></li>
     </ul>
 </div>
 {% endblock content %}
