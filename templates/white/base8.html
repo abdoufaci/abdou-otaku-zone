@@ -354,12 +354,12 @@ for (var attr in meta) {
   <link rel="canonical" href="https://themes.materializecss.com/pages/startup-horizontal-half.html">
 </head>
 <body>
-<nav style="background-color:purple">
+<nav style="background-color:white">
 <div class="container">
-        <a href="purple" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
+        <a href="white" class="brand-logo" style="font-family:cursive ; color:black">Otaku Zone</a>
         <ul id="nav-mobile" class="ag hide-on-med-and-down">
             <li class="active">
-                <a class="dropdown-button" data-activates="feature-dropdown" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                <a class="dropdown-button" data-activates="feature-dropdown" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive ; color:black">
                     colors
                     <i class="material-icons ag" style="color:black">
                         arrow_drop_down
@@ -383,7 +383,7 @@ for (var attr in meta) {
 
         <ul id="nav-mobile" class="ag hide-on-med-and-down">
             <li class="active">
-                <a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                <a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive ; color:black">
                     categories
                     <i class="material-icons ag" style="color:black">
                         arrow_drop_down
@@ -393,8 +393,8 @@ for (var attr in meta) {
         </ul>
 
         <ul id="pages" class="dropdown-content" style="color:orange ; width:3.5cm">
-          <li><a  href="shojo_search" style="color:purple ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
-          <li><a href="startup-zoom-out.html" style="color:purple ; font-family:cursive ; padding-left:0.2cm">anime film</a></li>
+          <li><a  href="shojo_search" style="color:black ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
+          <li><a href="startup-zoom-out.html" style="color:black ; font-family:cursive ; padding-left:0.2cm">anime film</a></li>
         </ul>
     <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
 </div>
@@ -404,7 +404,7 @@ for (var attr in meta) {
     <div class="row">
         <div class="col s4">
             <div class="center">
-                <i class="large material-icons" style="color:purple">flash_on</i>
+                <i class="large material-icons" style="color:white">flash_on</i>
                 <p style="font-family:cursive">Fast craigslist web scraper</p>
                 <p class="light center" style="font-family:cursive">Scrape away right here with a beautiful GUI.</p>
             </div>
@@ -412,22 +412,22 @@ for (var attr in meta) {
 
         <div class="col s4">
             <div class="center">
-                <i class="large material-icons" style="color:purple">camera</i>
+                <i class="large material-icons" style="color:white">camera</i>
                 <p style="font-family:cursive">Filter your searches</p>
                 <p class="light center" style="font-family:cursive">We built in functionality to filter based on pricing.</p>
             </div>
         </div>
         <div class="col s4">
             <div class="center">
-                <i class="large material-icons" style="color:purple">chrome_reader_mode</i>
+                <i class="large material-icons" style="color:white">chrome_reader_mode</i>
                 <p style="font-family:cursive">A much sexier front-end to Craigslist</p>
                 <p class="light center" style="font-family:cursive">We built this with ❤️</p>
             </div>
         </div>
     </div>
-    <form action="{% url 'purple_search' %}" method="post">
+    <form action="{% url 'white_search' %}" method="post">
         {% csrf_token %}
-          <nav style="background-color:purple">
+          <nav style="background-color:white">
               <div class="nav-wrapper">
                   <form>
                       <div class="input-field">
@@ -821,12 +821,12 @@ for (var attr in meta) {
 
     </div>
     <ul class="pagination" style="text-align:center">
-        <li class="disabled"><a href="#!"><i class="material-icons" style="color:purple">chevron_left</i></a></li>
-        <li class="active" style="background-color:purple"><a href="purple" style="color:white">1</a></li>
-        <li class=" waves-effect waves-pink" style="background-color:black"><a href="purple_page2" style="color:white">2</a></li>
-        <li class=" waves-effect waves-pink" style="background-color:black"><a href="purple_page3" style="color:white">3</a></li>
-        <li class=" waves-effect waves-pink" style="background-color:black"><a href="purple_page4" style="color:white">4</a></li>
-        <li class="waves-effect"><a href="#!"><i class="material-icons" style="color:purple">chevron_right</i></a></li>
+        <li class="disabled"><a href="#!"><i class="material-icons" style="color:white">chevron_left</i></a></li>
+        <li class="active" style="background-color:white"><a href="white" style="color:black">1</a></li>
+        <li class=" waves-effect waves-white" style="background-color:black"><a href="white_page2" style="color:white">2</a></li>
+        <li class=" waves-effect waves-white" style="background-color:black"><a href="white_page3" style="color:white">3</a></li>
+        <li class=" waves-effect waves-white" style="background-color:black"><a href="white_page4" style="color:white">4</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons" style="color:white">chevron_right</i></a></li>
     </ul>
 </div>
 {% endblock content %}

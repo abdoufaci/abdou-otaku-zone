@@ -170,3 +170,57 @@ def purple_page3(request):
 
 def purple_page4(request):
     return render(request, 'purple/purple_page4.html',)
+
+
+def yellow(request):
+    return render(request, 'yellow/base7.html',)
+
+
+def yellow_search(request):
+    request.method
+    search = request.POST.get('search')
+    models.Search.objects.create(search=search)
+    stuff_for_frontend = {
+        'search': search,
+    }
+
+    return render(request, 'yellow/search7.html', stuff_for_frontend)
+
+
+def yellow_page2(request):
+    return render(request, 'yellow/yellow_page2.html',)
+
+
+def yellow_page3(request):
+    return render(request, 'yellow/yellow_page3.html',)
+
+
+def yellow_page4(request):
+    return render(request, 'yellow/yellow_page4.html',)
+
+
+def white(request):
+    return render(request, 'white/base8.html',)
+
+
+def white_search(request):
+    request.method
+    search = request.POST.get('search')
+    models.Search.objects.create(search=search)
+    stuff_for_frontend = {
+        'search': search,
+    }
+
+    return render(request, 'white/search8.html', stuff_for_frontend)
+
+
+def white_page2(request):
+    return render(request, 'white/white_page2.html',)
+
+
+def white_page3(request):
+    return render(request, 'white/white_page3.html',)
+
+
+def white_page4(request):
+    return render(request, 'white/white_page4.html',)

@@ -2,6 +2,16 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('white_page4', views.white_page4, name='white_page4'),
+    path('white_page3', views.white_page3, name='white_page3'),
+    path('white_page2', views.white_page2, name='white_page2'),
+    path('white_search', views.white_search, name='white_search'),
+    path('white', views.white, name='white'),
+    path('yellow_page4', views.yellow_page4, name='yellow_page4'),
+    path('yellow_page3', views.yellow_page3, name='yellow_page3'),
+    path('yellow_page2', views.yellow_page2, name='yellow_page2'),
+    path('yellow_search', views.yellow_search, name='yellow_search'),
+    path('yellow', views.yellow, name='yellow'),
     path('purple_page4', views.purple_page4, name='purple_page4'),
     path('purple_page3', views.purple_page3, name='purple_page3'),
     path('purple_page2', views.purple_page2, name='purple_page2'),
