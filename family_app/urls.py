@@ -2,6 +2,11 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('purple_page4', views.purple_page4, name='purple_page4'),
+    path('purple_page3', views.purple_page3, name='purple_page3'),
+    path('purple_page2', views.purple_page2, name='purple_page2'),
+    path('purple_search', views.purple_search, name='purple_search'),
+    path('purple', views.purple, name='purple'),
     path('pink_page4', views.pink_page4, name='pink_page4'),
     path('pink_page3', views.pink_page3, name='pink_page3'),
     path('pink_page2', views.pink_page2, name='pink_page2'),
