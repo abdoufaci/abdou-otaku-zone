@@ -224,3 +224,5 @@ def white_page3(request):
 
 def white_page4(request):
     return render(request, 'white/white_page4.html',)
+
+
