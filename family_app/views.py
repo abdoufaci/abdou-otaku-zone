@@ -36,6 +36,10 @@ def page4(request):
     return render(request, 'my_app/page4.html',)
 
 
+def movie(request):
+    return render(request, 'my_app/movie.html',)
+
+
 def red(request):
     return render(request, 'base2.html',)
 
@@ -61,6 +65,10 @@ def red_page3(request):
 
 def red_page4(request):
     return render(request, 'red/red_page4.html',)
+
+
+def red_movie(request):
+    return render(request, 'red/red_movie.html',)
 
 
 def green(request):
@@ -90,6 +98,10 @@ def green_page4(request):
     return render(request, 'green/green_page4.html',)
 
 
+def green_movie(request):
+    return render(request, 'green/green_movie.html',)
+
+
 def blue(request):
     return render(request, 'blue/base4.html',)
 
@@ -115,6 +127,10 @@ def blue_page3(request):
 
 def blue_page4(request):
     return render(request, 'blue/blue_page4.html',)
+
+
+def blue_movie(request):
+    return render(request, 'blue/blue_movie.html',)
 
 
 def pink(request):
@@ -144,6 +160,10 @@ def pink_page4(request):
     return render(request, 'pink/pink_page4.html',)
 
 
+def pink_movie(request):
+    return render(request, 'pink/pink_movie.html',)
+
+
 def purple(request):
     return render(request, 'purple/base6.html',)
 
@@ -169,6 +189,10 @@ def purple_page3(request):
 
 def purple_page4(request):
     return render(request, 'purple/purple_page4.html',)
+
+
+def purple_movie(request):
+    return render(request, 'purple/purple_movie.html',)
 
 
 def white(request):
@@ -198,3 +222,5 @@ def white_page4(request):
     return render(request, 'white/white_page4.html',)
 
 
+def white_movie(request):
+    return render(request, 'white/white_movie.html',)

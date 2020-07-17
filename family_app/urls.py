@@ -2,6 +2,13 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('pink_movie', views.pink_movie, name='pink_movie'),
+    path('purple_movie', views.purple_movie, name='purple_movie'),
+    path('green_movie', views.green_movie, name='green_movie'),
+    path('blue_movie', views.blue_movie, name='blue_movie'),
+    path('red_movie', views.red_movie, name='red_movie'),
+    path('white_movie', views.white_movie, name='white_movie'),
+    path('movie', views.movie, name='movie'),
     path('white_page4', views.white_page4, name='white_page4'),
     path('white_page3', views.white_page3, name='white_page3'),
     path('white_page2', views.white_page2, name='white_page2'),

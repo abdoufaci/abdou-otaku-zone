@@ -1,10 +1,297 @@
-<!DOCTYPE html>
+{% load static %}
+{% block content %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>otaku zone</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="{% static "css/style5.css" %}">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css>
+    <link rel="stylesheet" href=https://fonts.googleapis.com/icon?family=Material+Icons>
+    <link href="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-materialize.min.css?v=6801316432905304896" rel="stylesheet">
+
 </head>
 <body>
+<nav style="background-color:darkgreen">
+<div class="container">
+        <a href="green" class="brand-logo" style="font-family:cursive">Otaku Zone</a>
+        <ul id="nav-mobile" class="ag hide-on-med-and-down">
+            <li class="active">
+                <a class="dropdown-button" data-activates="feature-dropdown" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                    colors
+                    <i class="material-icons ag" style="color:black">
+                        arrow_drop_down
+                    </i>
+                </a>
+            </li>
+        </ul>
 
+        <ul id="feature-dropdown"class="dropdown-content" style="color:orange">
+          <li><a  href="/" style="color:orange ; font-family:cursive ; padding-left:0.2cm">orange</a></li>
+          <li><a href="blue" style="color:blue ; font-family:cursive ; padding-left:0.2cm">blue</a></li>
+          <li><a href="red" style="color:darkred ; font-family:cursive ; padding-left:0.2cm">red</a></li>
+          <li><a href="purle" style="color:purple ; font-family:cursive ; padding-left:0.2cm">purple</a></li>
+          <li><a href="green" style="color:darkgreen ; font-family:cursive ; padding-left:0.2cm">green</a></li>
+          <li><a href="white" style="color:black ; font-family:cursive ; padding-left:0.2cm">white</a></li>
+          <li><a href="pink" style="color:hotpink ; font-family:cursive ; padding-left:0.2cm">Pink</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
+
+
+        <ul id="nav-mobile" class="ag hide-on-med-and-down">
+            <li class="active">
+                <a class="dropdown-button" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true" style="font-family:cursive">
+                    categories
+                    <i class="material-icons ag" style="color:black">
+                        arrow_drop_down
+                    </i>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="pages" class="dropdown-content" style="color:orange ; width:3.5cm">
+          <li><a  href="green" style="color:darkgreen ; font-family:cursive ; padding-left:0.2cm">  anime</a></li>
+          <li><a href="green_movie" style="color:darkgreen ; font-family:cursive ; padding-left:0.2cm">anime movie</a></li>
+        </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse ag"><i class="material-icons white-text">menu</i></a>
+</div>
+</nav>
+<div class="container">
+    <h1 style="text-align: center ; font-family:cursive"> any anime you are looking for... you will find it!</h1>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:darkgreen">flash_on</i>
+                <p style="font-family:cursive">Fast craigslist web scraper</p>
+                <p class="light center" style="font-family:cursive">Scrape away right here with a beautiful GUI.</p>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:darkgreen">camera</i>
+                <p style="font-family:cursive">Filter your searches</p>
+                <p class="light center" style="font-family:cursive">We built in functionality to filter based on pricing.</p>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color:darkgreen">chrome_reader_mode</i>
+                <p style="font-family:cursive">A much sexier front-end to Craigslist</p>
+                <p class="light center" style="font-family:cursive">We built this with ❤️</p>
+            </div>
+        </div>
+    </div>
+    <form action="{% url 'green_search' %}" method="post">
+        {% csrf_token %}
+          <nav style="background-color:darkgreen">
+              <div class="nav-wrapper">
+                  <form>
+                      <div class="input-field">
+                          <input id="search" type="search" name="search">
+                          <label class="label-icon" for="search"><i class="material-icons"style="color:black">search</i></label>
+                          <i class="material-icons">close</i>
+                      </div>
+                  </form>
+              </div>
+          </nav>
+    </form>
+        <div class="row">
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/43/3a/c4/433ac422ee798a469740c677ce3ba641.jpg" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Dragon Ball</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Dragon Ball</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/?s=dragon+ball+&post_type=movie"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/ce/9c/93/ce9c938d04a67fec228835f4e91ee3a9.jpg" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Bleach</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Bleach</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/?s=bleach&post_type=movie"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjU5NGY1NzYtNmIwYy00N2EzLTk1NzktOTM0ZjJjMjk0ZGYyXkEyXkFqcGdeQXVyMjQ5NjMxNDA@._V1_UY1200_CR105,0,630,1200_AL_.jpg" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Detective Conan</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Detective Conan</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/?s=Detective+Conan&post_type=movie"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/d1/0f/fc/d10ffcc72efe94737faacc65746580f4.jpg" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">One Piece</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>One Piece</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/?s=one+piece&post_type=movie"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://image.animedigitalnetwork.fr/license/naruto/tv2/web/affiche_370x0.jpg" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Naruto</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Naruto</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/movie/%d9%81%d9%8a%d9%84%d9%85-the-last-naruto-the-movie-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://vignette.wikia.nocookie.net/db-dokfanbattle/images/c/c8/Meliodafu.jpg/revision/latest?cb=20180720204652" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Nanatsu No Taizai</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Nanatsu No Taizai</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/movie/%d9%81%d9%8a%d9%84%d9%85-nanatsu-no-taizai-movie-tenkuu-no-torawarebito-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://ourfavoriteanime.files.wordpress.com/2018/09/9c91ffa3-dc20-48bf-8bc5-692e37c76d88.jpeg" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Attack On Titan</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Attack On Titan</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/movie/%d9%81%d9%8a%d9%84%d9%85-shingeki-no-kyojin-movie-3-kakusei-no-houkou-2018-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/2e/Deku_2.0.png/revision/latest?cb=20180716202923" style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Boku No Hero Academia</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Boku No Hero Academia</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/anime/anime-boku-no-hero-academia-video-all-mawasem-watch-download-hd/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/736x/9c/8e/d6/9c8ed64a619df9c040c63b5bfb119648.jpg" style="height:10cm">
+                    <span class="card-title" style="color:black ; font-family: cursive">Fairy Tail</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Fairy Tail</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://shahiid-anime.net/?s=Fairy+Tail"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://wir.skyrock.net/wir/v1/resize/?c=isi&im=%2F4753%2F101194753%2Fpics%2F3311868124_1_2_vyh2iZ4b.jpg&w=397"style="height:10cm">
+                    <span class="card-title" style="color:black ; font-family: cursive">Kuroko No Basket</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Kuroko No Basket</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/?s=Kuroko+No+Basket&post_type=movie"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static.tvtropes.org/pmwiki/pub/images/image_0250.jpeg"style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Code Geass</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Code Geass</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://animelek.tv/movie/%d9%81%d9%8a%d9%84%d9%85-code-geass-fukkatsu-no-lelouch-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://wheninmanila.blob.core.windows.net/wheninmanilabucket/2019/06/D7rQ8bGX4AYrtLJ.jpeg"style="height:10cm">
+                    <span class="card-title" style="font-family: cursive">Kimi No Na Wa</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>Kimi No Na Wa</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://www.zimabdko.com/anime/%d9%81%d9%8a%d9%84%d9%85-kimi-no-na-wa/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://www.wallpaperup.com/uploads/wallpapers/2017/08/21/1097261/985e2b9cfb09e2809fc0ad161be1cb64-700.jpg"style="height:10cm">
+                    <span class="card-title" style="color:black ; font-family: cursive">koe no katachi</span>
+                </div>
+                <div class="card-content">
+                    <p><h6>koe no katachi</h6></p>
+                </div>
+                <div class="card-action">
+                    <a href="https://www.zimabdko.com/anime/%d9%81%d9%8a%d9%84%d9%85-koe-no-katachi/"><h7>watch</h7></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="base.javaScript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/materialize/0.98.2/js/materialize.min.js"></script>
+<script src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/startup-all-min.js?v=3413361328181621882" crossorigin="anonymous"></script>
 </body>
 </html>
