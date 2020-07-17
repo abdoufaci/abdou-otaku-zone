@@ -1,9 +1,19 @@
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: hotpink;
+    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
+}
+
+h6{
+    color: hotpink;
+    font-family: cursive;
+}
+
+h7{
+    color: hotpink;
+    font-family: cursive;
 }

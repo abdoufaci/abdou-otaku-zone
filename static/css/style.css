@@ -12,11 +12,11 @@
 
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: darkorange;
+    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
 }
 
