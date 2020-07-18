@@ -1,1 +1,1 @@
-web: gunicorn outakozone.wsgi
+web: gunicorn --env DJANGO_SETTINGS_MODULE=timezone_project.settings family_project.wsgi
